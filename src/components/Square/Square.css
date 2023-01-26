@@ -3,6 +3,11 @@
   height: 180px;
   width: 180px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  font-size: 120px;
 }
 
 .square:nth-child(1) {
