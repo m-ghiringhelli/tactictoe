@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { GameContext } from './context/GameContext';
 import { useContext } from 'react';
+import Board from './components/Board/Board.js';
 
 function App() {
   const { 
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <div>
+      <Board />
     </div>
   );
 }
