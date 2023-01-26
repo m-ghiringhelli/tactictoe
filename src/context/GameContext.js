@@ -16,7 +16,7 @@ const GameProvider = ({ children }) => {
     { place: 9, content: '' }
   ]);
   const [currentPlayer, setCurrentPlayer] = useState('X');
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(true);
   const [gameMessage, setGameMessage] = useState('Click start to play');
 
   return (
