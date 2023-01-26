@@ -2,8 +2,11 @@ import React from 'react';
 import './Square.css';
 
 export default function Square({ square }) {
-  console.log(square);
+  const handleClick = () => {
+    console.log(`clicked ${square.place}`);
+  };
+
   return (
-    <div className='square'>{`${square.place}`}</div>
+    <div className='square' onClick={handleClick}>{`${square.place}`}</div>
   );
 }
