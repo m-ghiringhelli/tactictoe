@@ -51,7 +51,7 @@ function App() {
     const cats = checkCatsGame();
     const player = currentPlayer === 'X' ? 'O' : 'X';
     win && setGameMessage(`${player} wins!`);
-    cats && setGameMessage('Cats game!');
+    (!win && cats) && setGameMessage('Cats game!');
     (win || cats) && setActive(!active);
   }, [board]);
 
